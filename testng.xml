@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression" verbose="1" parallel="tests" thread-count="2">
+    <test name="Regression" parallel="tests" >
+        <classes>
+            <class name="Scenario1"/>
+        </classes>
+    </test>
+
+    <test name="Regression1" parallel="tests" >
+        <classes>
+            <class name="Scenario2"/>
+
+        </classes>
+    </test>
+    <test name="Regression2" parallel="tests" >
+        <classes>
+            <class name="NegativeCases"/>
+
+        </classes>
+    </test>
+
+
+
+</suite>
